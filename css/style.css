@@ -1,0 +1,42 @@
+body {
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    background-color: #333;
+    border-radius: 10px;
+    font-family: "Optimist";
+    padding: 30px;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+p {
+    color: white;
+    margin: 0 0 20px;
+}
+
+span {
+    display: block;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+input {
+    border-radius: 5px;
+    margin: 0 0 20px;
+    width: 100%;
+}
+
+input[type=number] {
+    width: 97%;
+}
+
+button {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <form id="params">
+      <p>Frames Per Second <span>*60 fps max</span></p>
+      <input type="number" name="framerate" min="1" max="60" value="60">
+      <input type="number" name="drawStrokeWeight" min="1" max="8" value="3">
+      <input type="number" name="lineSteps" min="1" max="20" value="1">
+      <button type="submit" onclick="return processForm()">Apply Changes</button>
+      <button type="submit" onclick="return toggleMouse()">Toggle audio interaction</button>
+      <p class="audioControllerDisplay"><span>Viz controling audio</span></p>
+      <p class="pointCounter"></p>
+
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/p5.min.js"></script>
+    <script src="js/audio.js"></script>
+    <script src="js/triangles.js"></script>
+    <script>
+      $(document).ready(function() {
+        setTimeout(toggle, 500);
+      });
+    </script>
+  </body>
+</html>
